@@ -3,15 +3,14 @@ using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using Assignment3_version_1._0._0._0;
+using TaskClasses;
 using Newtonsoft.Json;
 using static Program;
 
 namespace Fetching
 {
-    class FetchingPro
-    {
-        public class Project
+   
+    public class Project
         {
             public string Id { get; set; }
             public string Name { get; set; }
@@ -24,7 +23,7 @@ namespace Fetching
                 Id = id; Name = name; Description = description; CreatedDate = createddate;
             }
         }
-        public class WorkItem
+    public class WorkItem
         {
             public int? id { get; set; }
             //public int rev { get; set; }
@@ -35,22 +34,22 @@ namespace Fetching
             public List<WorkItemCommentResponse>? CommentArray { get; set; } = new List<WorkItemCommentResponse>();
         }
         //sagdygy
-        public class WorkItemCommentResponse
+    public class WorkItemCommentResponse
         {
             public string[] Mentions { get; set; }
             public int? WorkItemId { get; set; }
             public int? Id { get; set; }
             public int? Version { get; set; }
             public string? Text { get; set; }
-            public User? CreatedBy { get; set; }
+            public FUser? CreatedBy { get; set; }
             public string? CreatedDate { get; set; }
-            public User? ModifiedBy { get; set; }
+            public FUser? ModifiedBy { get; set; }
             public string? ModifiedDate { get; set; }
             public string? Format { get; set; }
             public string? RenderedText { get; set; }
             public string? Url { get; set; }
         }
-        public class User
+    public class FUser
         {
         public string? displayName { get; set; }
         public string? url { get; set; }
@@ -75,45 +74,6 @@ namespace Fetching
     {
         public string? href { get; set; }
     }
-    //public class User
-    //{
-    //    public string DisplayName { get; set; }
-    //    public string Url { get; set; }
-    //    public Links Links { get; set; }
-    //    public string Id { get; set; }
-    //    public string UniqueName { get; set; }
-    //    public string ImageUrl { get; set; }
-    //    public string Descriptor { get; set; }
-    //}
-
-    //public class Links
-    //{
-    //    public Avatar Avatar { get; set; }
-    //}
-
-    //public class Avatar
-    //{
-    //    public string Href { get; set; }
-    //}
-    //public class RevisedBy
-    //{
-    //    public string? Id { get; set; }
-    //    public string? Name { get; set; }
-    //    public string? DisplayName { get; set; }
-    //    public string? Url { get; set; }
-    //}
-
-    //public class WorkItemCommentResponse
-    //{
-    //    public string? Revision { get; set; }
-    //    public string? Text { get; set; }
-    //    public RevisedBy? RevisedBy { get; set; }
-    //    public DateTime? RevisedDate { get; set; }
-    //    public string? RenderedText { get; set; }
-    //    public string? Format { get; set; }
-    //    public string? Url { get; set; }
-    //}
-
     public class Fields
         {
             [JsonProperty("System.Title")]
@@ -125,7 +85,7 @@ namespace Fetching
             [JsonProperty("System.State")]
             public string? System_State { get; set; }
             [JsonProperty("System.AssignedTo")]
-            public User?  System_AssignedTo { get; set; }
+            public FUser?  System_AssignedTo { get; set; }
             [JsonProperty("Microsoft.VSTS.Common.Priority")]
             public int? Microsoft_VSTS_Common_Priority { get; set; }
             //[JsonProperty("System.TeamProject")]
@@ -133,18 +93,17 @@ namespace Fetching
             [JsonProperty("System.Tags")]
             public string? System_Tags { get; set; }
 
-
             [JsonProperty("System.Reason")]
             public string? System_Reason { get; set; }
         
             [JsonProperty("System.CreatedDate")]
             public DateTime? System_CreatedDate { get; set; }
             [JsonProperty("System.CreatedBy")]
-            public User? System_CreatedBy { get; set; }
+            public FUser? System_CreatedBy { get; set; }
             [JsonProperty("System.ChangedDate")]
             public DateTime? System_ChangedDate { get; set; }
             [JsonProperty("System.ChangedBy")]
-            public User? System_ChangedBy { get; set; }
+            public FUser? System_ChangedBy { get; set; }
             [JsonProperty("System.CommentCount")]
             public int? System_CommentCount { get; set; }
            
@@ -167,26 +126,16 @@ namespace Fetching
             [JsonProperty("Microsoft.VSTS.TCM.ReproSteps")]
             public string? Microsoft_VSTS_TCM_ReproSteps { get; set; }
         }
-        public class AssignedTo
-        {
-            public string? displayName { get; set; }
-            public string? url { get; set; }
-            public Links? _links { get; set; }
-        }
-
-        //public class Links
-        //{
-        //    public Avatar avatar { get; set; }
-        //}
-
-        public class Avatar
-        {
-            public string? href { get; set; }
-        }
-        
-      
-
-
+    public class AssignedTo
+    {
+        public string? displayName { get; set; }
+        public string? url { get; set; }
+        public Links? _links { get; set; }
     }
+    public class Avatar
+    {
+        public string? href { get; set; }
     }
+    
+}
 
