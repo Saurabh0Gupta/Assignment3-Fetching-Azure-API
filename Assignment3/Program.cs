@@ -16,7 +16,7 @@ class Program
 {
     private static readonly string organization = "saurabhgupta0979";
     private static readonly string project = "Assignment3Demo";
-    private static readonly string pat = "c67gh4mtepm4grslrv625l5e4l47k3d2qhn5ikw6q33jvtkg4inq";
+    private static readonly string pat = "f7jjuktwxr2lxfj5zyq7qy7damzasx7q35oxihjgcnmr5xjvvdxq";
     public static async Task Main(string[] args)
     {
         await AllProject(); 
@@ -134,8 +134,7 @@ class Program
     //https://dev.azure.com/saurabhgupta0979/Assignment3Demo/_apis/wit/workItems/1/comments?api-version=4.1-preview.2
     //https://dev.azure.com/saurabhgupta0979/_apis/wit/workItems/1/comments/2
     public static async Task<WorkItem> GetWorkItemDetails(string workItemUrl, Project ProjectName)
-    {
-        
+    {   
         using (HttpClient client = new HttpClient())
         {
             // Setup Authorization Header with PAT
@@ -320,8 +319,6 @@ class Program
         }
         return RetunAllComment;
     }
-
-
     public static string DateTimeFormat(string format)
     {
         DateTime dateTime = DateTime.Parse(format);
@@ -334,7 +331,6 @@ class Program
         string formattedDate = dateTime.ToString("yyyy-MM-dd");
         return formattedDate;
     }
-
     public static List<string> GetAllTag(string tag)
     {
         List<string> Tags = new List<string>();
