@@ -1,4 +1,0 @@
-﻿
-
-AllProject() // I have created this function get detail of all project in one organization.
-			 // 

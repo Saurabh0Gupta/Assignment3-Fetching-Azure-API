@@ -1,0 +1,259 @@
+﻿
+{
+  "Assignment3Demo": {
+    "id": "280e5742-c949-43a7-ac6d-5e3515bb5083",
+    "name": "Assignment3Demo",
+    "description": "This is demo project come under the Assignment project",
+    "startDate": "2024-10-22",
+    "endDate": "YYYY-MM-DD",
+    "status": "N/A",
+    "priority": "N/A",
+    "owner": {
+      "id": "N/A",
+      "name": "N/A",
+      "email": "N/A"
+    },
+    "customFields": {
+      "visibility": "public",
+      "state": "wellFormed"
+    },
+    "Tasks": [
+      {
+        "id": "1",
+        "title": "LogginPage",
+        "description": "<div>You have to create login page for the application. </div><div><br> </div><div>this type<img src=\"https://dev.azure.com/saurabhgupta0979/280e5742-c949-43a7-ac6d-5e3515bb5083/_apis/wit/attachments/f5ff619f-bab0-4135-9afd-b72810cd547c?fileName=Screenshot%20%281%29.png\" alt=\"Screenshot (1).png\"> </div>",
+        "type": "Product Backlog Item",
+        "status": "New",
+        "assignees": {
+          "id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+          "name": "Saurabh Gupta",
+          "email": "saurabh.gupta@techextensor.com"
+        },
+        "reporters": {
+          "id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+          "name": "Saurabh Gupta",
+          "email": "saurabh.gupta@techextensor.com"
+        },
+        "priority": "4",
+        "tags": [
+          "firstTaskTag",
+          "tag 3",
+          "tag2"
+        ],
+        "startDate": "2024-10-25",
+        "dueDate": "YYYY-MM-DD",
+        "timeEstimate": "N/A",
+        "timeSpent": "N/A",
+        "resolution": "N/A",
+        "subtasks": [],
+        "comments": [
+          {
+            "id": "15944696",
+            "Authorr": {
+              "Id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+              "Name": "Saurabh Gupta",
+              "Email": "saurabh.gupta@techextensor.com"
+            },
+            "text": "<div>comment 2 in 1 work item</div><div><br></div>",
+            "timestamp": "2024-10-24T16:00:49"
+          },
+          {
+            "id": "15940372",
+            "Authorr": {
+              "Id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+              "Name": "Saurabh Gupta",
+              "Email": "saurabh.gupta@techextensor.com"
+            },
+            "text": "<div>This comment is for the developer to develop.</div>",
+            "timestamp": "2024-10-22T11:04:55"
+          }
+        ],
+        "attachments": [],
+        "timelogs": [],
+        "customFields": {
+          "System.BoardColumn": "New",
+          "System.BoardColumnDone": "False",
+          "Microsoft.VSTS.Common.ValueArea": "Business",
+          "System.IterationPath": "Assignment3Demo\\Sprint 2"
+        }
+      },
+      {
+        "id": "2",
+        "title": "LoginPageTask1",
+        "description": "<div>This is Task description of login page. </div>",
+        "type": "Task",
+        "status": "To Do",
+        "assignees": {
+          "id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+          "name": "Saurabh Gupta",
+          "email": "saurabh.gupta@techextensor.com"
+        },
+        "reporters": {
+          "id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+          "name": "Saurabh Gupta",
+          "email": "saurabh.gupta@techextensor.com"
+        },
+        "priority": "3",
+        "tags": null,
+        "startDate": "2024-10-22",
+        "dueDate": "YYYY-MM-DD",
+        "timeEstimate": "N/A",
+        "timeSpent": "N/A",
+        "resolution": "N/A",
+        "subtasks": [],
+        "comments": [
+          {
+            "id": "15941012",
+            "Authorr": {
+              "Id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+              "Name": "Saurabh Gupta",
+              "Email": "saurabh.gupta@techextensor.com"
+            },
+            "text": "<div>Comment of new task under the workitem </div><div><br> </div>",
+            "timestamp": "2024-10-22T16:14:01"
+          }
+        ],
+        "attachments": [],
+        "timelogs": [],
+        "customFields": {
+          "System.BoardColumn": null,
+          "System.BoardColumnDone": null,
+          "Microsoft.VSTS.Common.ValueArea": null,
+          "System.IterationPath": "Assignment3Demo\\Sprint 1"
+        }
+      },
+      {
+        "id": "3",
+        "title": "Login page bug",
+        "description": null,
+        "type": "Bug",
+        "status": "New",
+        "assignees": null,
+        "reporters": {
+          "id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+          "name": "Saurabh Gupta",
+          "email": "saurabh.gupta@techextensor.com"
+        },
+        "priority": "2",
+        "tags": null,
+        "startDate": "2024-10-22",
+        "dueDate": "YYYY-MM-DD",
+        "timeEstimate": "N/A",
+        "timeSpent": "N/A",
+        "resolution": "N/A",
+        "subtasks": [],
+        "comments": [],
+        "attachments": [],
+        "timelogs": [],
+        "customFields": {
+          "System.BoardColumn": "New",
+          "System.BoardColumnDone": "False",
+          "Microsoft.VSTS.Common.ValueArea": "Business",
+          "System.IterationPath": "Assignment3Demo\\Sprint 1"
+        }
+      },
+      {
+        "id": "4",
+        "title": "mhara task",
+        "description": null,
+        "type": "Task",
+        "status": "To Do",
+        "assignees": {
+          "id": "5a38b30c-e602-6b4e-b849-d59897b21b57",
+          "name": "Devanand Patil",
+          "email": "devanand.patil@techextensor.com"
+        },
+        "reporters": {
+          "id": "5a38b30c-e602-6b4e-b849-d59897b21b57",
+          "name": "Devanand Patil",
+          "email": "devanand.patil@techextensor.com"
+        },
+        "priority": "2",
+        "tags": null,
+        "startDate": "2024-10-28",
+        "dueDate": "YYYY-MM-DD",
+        "timeEstimate": "N/A",
+        "timeSpent": "N/A",
+        "resolution": "N/A",
+        "subtasks": [],
+        "comments": [],
+        "attachments": [],
+        "timelogs": [],
+        "customFields": {
+          "System.BoardColumn": null,
+          "System.BoardColumnDone": null,
+          "Microsoft.VSTS.Common.ValueArea": null,
+          "System.IterationPath": "Assignment3Demo"
+        }
+      }
+    ],
+    "resources": []
+  }
+}
+{
+  "demo2 project": {
+    "id": "dc24b05c-7a78-49ad-9322-c3b7ef2ca9e3",
+    "name": "demo2 project",
+    "description": "demo 2 description",
+    "startDate": "2024-10-23",
+    "endDate": "YYYY-MM-DD",
+    "status": "N/A",
+    "priority": "N/A",
+    "owner": {
+      "id": "N/A",
+      "name": "N/A",
+      "email": "N/A"
+    },
+    "customFields": {
+      "visibility": "private",
+      "state": "wellFormed"
+    },
+    "Tasks": [
+      {
+        "id": "5",
+        "title": "Epic Title in demo2 Project",
+        "description": "<div>Description for demo2 project </div>",
+        "type": "Epic",
+        "status": "New",
+        "assignees": null,
+        "reporters": {
+          "id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+          "name": "Saurabh Gupta",
+          "email": "saurabh.gupta@techextensor.com"
+        },
+        "priority": "3",
+        "tags": [
+          "tag2",
+          "tagone"
+        ],
+        "startDate": "2024-10-24",
+        "dueDate": "YYYY-MM-DD",
+        "timeEstimate": "N/A",
+        "timeSpent": "N/A",
+        "resolution": "N/A",
+        "subtasks": [],
+        "comments": [
+          {
+            "id": "15944674",
+            "Authorr": {
+              "Id": "0c828280-3a12-6f28-befd-1e37dcd35c04",
+              "Name": "Saurabh Gupta",
+              "Email": "saurabh.gupta@techextensor.com"
+            },
+            "text": "<div>Epic comment 1st saurabh is writeing</div>",
+            "timestamp": "2024-10-24T15:53:23"
+          }
+        ],
+        "attachments": [],
+        "timelogs": [],
+        "customFields": {
+          "System.BoardColumn": null,
+          "System.BoardColumnDone": null,
+          "Microsoft.VSTS.Common.ValueArea": "Business",
+          "System.IterationPath": "demo2 project"
+        }
+      }
+    ],
+    "resources": []
+  }
+}
